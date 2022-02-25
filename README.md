@@ -45,13 +45,17 @@ Listado de organizacion de ejércitos Warhammer.
 | --------------- | ------ | ----------------------------- | ------------------------------------------------ | ------------------------------------- | --------------- |
 | Log in form     | GET    | /login                        | See the form to log in                           |                                       |                 |
 | Log in          | POST   | /login                        | Log in the user                                  | {mail, password}                      | /               |
-| Home            | GET    | /                               See the main page                                |                                       |                 |
 | Log out         | GET    | /logout                       | Log out a user                                   |                                       | /               |
 | Sign Up form    | GET    | /signup                       | See the form to sign up                          |                                       |                 |
-| Sign Up         | POST   | /signup                       | Sign up a user                                   | {mail, password}                      | /
-| Profile army    | GET    | /profile                      | See the profile page with editable form          |                                       |                 |
-| Profile edited  | POST   | /profile                      | Send user's data changed                         | {user_email, password}                | /profilearmy     |
-| Profile army delete    | POST   | /army_id/army/army_id/delete| Delete profile army from user's  colection  |                                       | /profilearmy  |
+| Sign Up         | POST   | /signup                       | Sign up a user                                   | {mail, password}                      | /               |
+| Home            | GET    | /                             | See the main page and armies list                |                                       |                 |
+| History         | GET    | /faction/history              | See the history about faction selected           |                                       |                 |
+| Units           | GET    | /faction/units                | See the units about faction selected             |                                       |                 |
+| Army add        | POST   | /faction/armyId               | Build an army and saved                          |                                       |                 |
+| Profile edited  | POST   | /userID/profile/edit          | Send user's data changed                         | {user_email, password}                | /profile        |
+| Profile deleted | POST   | /userID/profile/delete        | User's data deleted                              |                                       | /login          |
+| Profile army edit    | POST   | /userID/faction/armyID/edit| Edit profile army from user's  colection       |                                       | /profile        |
+| Profile army delete  | POST   | /userID/profile/armyID/delete | Delete army                                 |                                       | /profile        |
 
 ## Models
 
@@ -74,6 +78,8 @@ Listado de organizacion de ejércitos Warhammer.
 ```javascript
  { faction: [imperial, dwarfs, elves, orks, skavens],
   { category: [ heroes, generals, infantry, cavalry, artillery ]
+  {  name: String,
+     advice: String,
   }
 ```
 
