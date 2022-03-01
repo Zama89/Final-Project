@@ -32,10 +32,6 @@ Listado de organizacion de ejércitos Warhammer.
 
 **Home** - A user is able to see others armies created by others users. 
 
-**History** - A user can read a history about the faction selected.
-
-**Units** - A user can read information about each unit from their faction.
-
 **Army** - A user can build an army.
 
 
@@ -49,8 +45,6 @@ Listado de organizacion de ejércitos Warhammer.
 | Sign Up form    | GET    | /signup                       | See the form to sign up                          |                                       |                 |
 | Sign Up         | POST   | /signup                       | Sign up a user                                   | {mail, password}                      | /               |
 | Home            | GET    | /                             | See the main page and armies list                |                                       |                 |
-| History         | GET    | /faction/history              | See the history about faction selected           |                                       |                 |
-| Units           | GET    | /faction/units                | See the units about faction selected             |                                       |                 |
 | Army add        | POST   | /faction/armyId               | Build an army and saved                          |                                       |                 |
 | Profile edited  | POST   | /userID/profile/edit          | Send user's data changed                         | {user_email, password}                | /profile        |
 | Profile deleted | POST   | /userID/profile/delete        | User's data deleted                              |                                       | /login          |
@@ -76,10 +70,13 @@ Listado de organizacion de ejércitos Warhammer.
 
 -Army model 
 ```javascript
- { faction: [imperial, dwarfs, elves, orks, skavens],
-  { category: [ heroes, generals, infantry, cavalry, artillery ]
-  {  name: String,
-     advice: String,
-  }
+ { heroe: {type: String, enum: ["Thorgrim" , "Ungrim"]},
+   generals: {type: String, enum: ["Maestro Ingeniero", "Herrero Rúnico", "Señor del Clan"]},
+   infantry: {type: String, enum: ["Guerreros Enanos", "Rompehierros", "Barbaslargas", "Matadores", "Mineros", "Ballesteros", "Atronadores", "Dracohierros"]},
+   artillery: {type: String, enum: ["Lanzaagravios", "Cañón", "Cañón órgano", "Lanzallamas", "Girocóptero", "Girocóptero bombardero"]},
+   {name: String,
+    advice: String,
+  },
+ }
 ```
 
