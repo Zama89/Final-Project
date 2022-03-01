@@ -74,9 +74,8 @@ Listado de organizacion de ejércitos Warhammer.
    general: {type: String, enum: ["Maestro Ingeniero", "Herrero Rúnico", "Señor del Clan"]},
    infantry: {type: String, enum: ["Guerreros Enanos", "Rompehierros", "Barbaslargas", "Matadores", "Mineros", "Ballesteros", "Atronadores", "Dracohierros"]},
    artillery: {type: String, enum: ["Lanzaagravios", "Cañón", "Cañón órgano", "Lanzallamas", "Girocóptero", "Girocóptero bombardero"]},
-   {name: String,
-    advice: String,
-   },
+   name: String,
+   advice: String,
  }
 ```
 
