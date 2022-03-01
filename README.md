@@ -76,7 +76,7 @@ Listado de organizacion de ejércitos Warhammer.
    artillery: {type: String, enum: ["Lanzaagravios", "Cañón", "Cañón órgano", "Lanzallamas", "Girocóptero", "Girocóptero bombardero"]},
    {name: String,
     advice: String,
-  },
+   },
  }
 ```
 
