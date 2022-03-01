@@ -48,7 +48,7 @@ Listado de organizacion de ejércitos Warhammer.
 | Army add        | POST   | /faction/armyId               | Build an army and saved                          |                                       |                 |
 | Profile edited  | POST   | /userID/profile/edit          | Send user's data changed                         | {user_email, password}                | /profile        |
 | Profile deleted | POST   | /userID/profile/delete        | User's data deleted                              |                                       | /login          |
-| Profile army edit    | POST   | /userID/profile/armyID/edit| Edit profile army from user's  colection       |                                       | /profile        |
+| Profile army edit    | POST   | /userID/profile/edit| Edit profile army from user's  colection       |                                       | /profile        |
 | Profile army delete  | POST   | /userID/profile/armyID/delete | Delete army                                 |                                       | /profile        |
 
 ## Models
