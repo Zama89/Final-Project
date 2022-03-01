@@ -46,10 +46,10 @@ Listado de organizacion de ejércitos Warhammer.
 | Sign Up         | POST   | /signup                       | Sign up a user                                   | {mail, password}                      | /               |
 | Home            | GET    | /                             | See the main page and armies list                |                                       |                 |
 | Army add        | POST   | /army               | Build an army and saved                          |                                       |                 |
-| army edit    | POST   | /army/:îd | Edit profile army from user's  colection       |                                       |         |
-| army delete  | DELETE   | /army/:îd | Delete army                                 |                                       |         |
+| army edit    | POST   | /army/:id | Edit profile army from user's  colection       |                                       |         |
+| army delete  | DELETE   | /army/:id | Delete army                                 |                                       |         |
 | get all army  | GET   | /army | find army                                 |                                       |         |
-| get one army  | GET   | /army/:îd | find one army                                 |                                       |         |
+| get one army  | GET   | /army/:id | find one army                                 |                                       |         |
 
 
 ## Models
