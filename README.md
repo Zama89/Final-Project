@@ -71,7 +71,7 @@ Listado de organizacion de ejércitos Warhammer.
 -Army model 
 ```javascript
  { heroe: {type: String, enum: ["Thorgrim" , "Ungrim"]},
-   generals: {type: String, enum: ["Maestro Ingeniero", "Herrero Rúnico", "Señor del Clan"]},
+   general: {type: String, enum: ["Maestro Ingeniero", "Herrero Rúnico", "Señor del Clan"]},
    infantry: {type: String, enum: ["Guerreros Enanos", "Rompehierros", "Barbaslargas", "Matadores", "Mineros", "Ballesteros", "Atronadores", "Dracohierros"]},
    artillery: {type: String, enum: ["Lanzaagravios", "Cañón", "Cañón órgano", "Lanzallamas", "Girocóptero", "Girocóptero bombardero"]},
    {name: String,
