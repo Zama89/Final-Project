@@ -45,11 +45,12 @@ Listado de organizacion de ejércitos Warhammer.
 | Sign Up form    | GET    | /signup                       | See the form to sign up                          |                                       |                 |
 | Sign Up         | POST   | /signup                       | Sign up a user                                   | {mail, password}                      | /               |
 | Home            | GET    | /                             | See the main page and armies list                |                                       |                 |
-| Army add        | POST   | /faction/armyId               | Build an army and saved                          |                                       |                 |
-| Profile edited  | POST   | /userID/profile/edit          | Send user's data changed                         | {user_email, password}                | /profile        |
-| Profile deleted | POST   | /userID/profile/delete        | User's data deleted                              |                                       | /login          |
-| Profile army edit    | POST   | /userID/profile/edit| Edit profile army from user's  colection       |                                       | /profile        |
-| Profile army delete  | POST   | /userID/profile/armyID/delete | Delete army                                 |                                       | /profile        |
+| Army add        | POST   | /army               | Build an army and saved                          |                                       |                 |
+| army edit    | POST   | /army/:îd | Edit profile army from user's  colection       |                                       |         |
+| army delete  | DELETE   | /army/:îd | Delete army                                 |                                       |         |
+| get all army  | GET   | /army | find army                                 |                                       |         |
+| get one army  | GET   | /army/:îd | find one army                                 |                                       |         |
+
 
 ## Models
 
