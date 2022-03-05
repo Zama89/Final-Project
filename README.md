@@ -66,7 +66,9 @@ Listado de organizacion de ejércitos Warhammer.
   hashedPassword: {
     type: String,
     required: [true, 'password is required'],
-  },}
+  },
+  armies: [{ type: Schema.Types.ObjectId, ref: 'Army' }],
+  }
 ```  
 
 -Army model 
