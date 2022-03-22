@@ -20,19 +20,20 @@ Listado de organizacion de ejércitos Warhammer.
 
 
 
-**Profile** - A user is able to see his profile and edit it or delete it.
+**Home** - A user is able to see others armies created by others users. 
 
-**Delete profile** - A use is able to delete pet profile from their profile
+**My Armies** - A user can see all the armies he has created.
 
-**Update discription** - A user is able to update the information of their pets
+**Create army** -  A user can build an army.
+
+**Delete army** - A use is able to delete pet profile from their profile
 
 **Edit armies** - A user is able to edit information of their pets to my profile based on a units catalog.
 
+**Units** - A user can see characteristics skills about the units.
 
 
-**Home** - A user is able to see others armies created by others users. 
 
-**Army** - A user can build an army.
 
 
 ## Routes
